@@ -1,0 +1,205 @@
+v2.2.8 2014.4.2
+更新：
+1) 解决偶然出现的"None eth of wlan found"的问题
+
+.....
+
+v2.2.6 2013.7.25
+更新：
+1) fix bug of ip_checksum
+2) 修改发送包时src IP的优先级： 指定src IP > 指定iface的IP > 根据目的地址计算的src IP
+3) add default conf.iface to default iface when building DHCPClient.
+4) DHCPClient: 添加对transaction id的判断
+
+v2.2.5 2013.3.13
+更新：
+1. Fix Bug: 获取Win7下的静态路由异常。
+2. SCAPY-21: DHCPClient()状态机添加参数iface，可指定网卡发送报文。
+3. DHCPClient()状态机添加参数retry，可重试多次，默认为12次。
+
+v2.2.4 2013.3.13
+更新：
+1. SCAPY-16: fix bug dissecting dhcpv6 option DHCP6OptIAAddress
+2. Fix Bug: fix bug dissecting DHCP PAD option
+3. SCAPY-17: add support for dissection IPv6_CP and ICMPv6\DHCPv6 encapsulated in ppp
+4. SCAPY-19: fix bug for ipv6 inet_ntop
+
+v2.2.3 2013.1.17
+更新：
+1. SCAPY-6: 在DHCP客服端状态机中增加接口以控制获取IP的方式为广播或单播。
+2. SCAPY-9: 修复解析DHCPv6 FullyQualified Domain Name的Bug，添加ICMPv6 MLDv2（相关于IPv3的igmpv3）报文解析。
+3. Fix bug SCAPY-14: 使用scapy发送无线组播包，数据包的源MAC错误.
+4. Fix Bug: 当tsniff的抓包结果为空列表时，join_tsniff()将阻塞。
+
+v2.2.2 2013.1.10
+更新：
+1. add global function tsend,tsendp: threaded send and sendp.
+2. add global function stop_send.
+3. add global function join_tsniff.
+4. fix bug SCAPY-13: "send packet at 3 layer parameter iface take no effect".
+5. fix bug SCAPY-12: 解析FTP 421连接超时字段.
+
+
+v2.2.1 2012.12.6
+修复BUG:
+1.修复HTTP层的BUG
+
+
+v2.2.0 2012.11.23
+更新：
+1. add global function  tsniff: sniff packet in a new thread
+2. add global function  get_tsniff_result , get the tsniff result
+3. add global function  eval_lfilter 
+
+修复Bug：
+1.修复win7下多网卡下指定网卡抓包不生效的问题
+
+TODO：
+修复win7下无线网卡收发包的问题
+
+v2.1.4 2012.10.19
+更新：
+无
+
+修复Bug:
+1.修复IPv6支持出错的问题
+2.修复某些机型中PPP包中的HDLC层中不存在address,control字段导致的解析出错的问题
+
+
+v2.1.3
+更新：
+1.添加ip_checksum,tcp_checksum,udp_checksum等函数
+
+修复Bug：
+修复当存在多个默认网关时出口IP只显示为一个的问题
+
+
+v2.1.2 
+pass
+
+
+v2.1.1.11 2012.07.23
+更新：
+1.添加DHCP Options245字段
+2.增加sip、http报文的解析
+
+修复Bug：
+1.同一块网块有多个IP不能正确决断出口IP的问题
+2.未引入Metric的导致出口IP不正确的问题
+
+v2.1.1.10 2012.05.25
+更新：
+修改IP层的MF等为flags,使fragment函数能生效
+
+v2.1.1.9 2012.04.25
+更新：
+添加stop_sniff函数，强制结束抓包，也可以通过设置conf.stop_sniff来设计
+原有stopper函数不再建议使用
+
+
+v2.1.1.8 2012.02.20
+更新:
+1.Modify some dot11 element to right order @libo
+2.Modify the convent_to_eth function
+
+v2.1.1.7 2012.02.07
+更新：
+
+1.add the support for FCS frame       by @libo
+2.add parameter timeout,stop_filter to function send,sendp      by @libo
+3.修复如果正在获取IP导致send发送包时指定iface会导致Scapy挂起的Bug，by @liuquanquan
+4.ppp.py 中CHAR改为CHAP
+
+修复Bug:
+1.PYWAT-147:DNS Response包解析的问题
+2.omit the last dot of DNS query name that dissected
+
+v2.1.1.6 2012.01.11
+更新：
+1.增加PPPoE所有本人已知字段的解析
+2.增加是否在抓包判断函数 is_sniffing
+3. finish the dot11 management frame
+
+Fixed Bug:
+	1.修复引入IGMP后在windows下sniff函数抓包时出现10038错误，
+原因是IGMP必须放在较优先级load.
+	2.修复DHCP中option6 DNS回包中多个ip回包时解析错误的问题(PYWAT-134)
+
+v2.1.1.5 2012.01.04
+更新：
+	1.提供IGMPv2的支持
+	2.[将要]提供判断函数判断有无开始抓包
+Fixed Bug：
+	1.修复在非交互模式下scapy会修改系统的默认的标准输入输出问题
+
+2011.11.24
+版本：2.1.1.4_build20111124
+更新: 1.修复windows下同一网卡添加两个ip用sendp发包时指定iface会导致
+	python进程挂掉的bug
+      2.sniff函数添加一个stopper的函数参数，一旦stopper返回true则停止抓包
+ 	(贡献者：刘全权)
+
+2011.07.01
+版本：2.1.1.3_build20110701
+更新：1.添加两个PPP LCP Option：ACCM和FCS
+贡献者：陈禹桥
+
+2011.05.20
+版本：2.1.1CX-build20110520
+更新：1.修改一个l2tp无avp时无法保存包的bug
+作者：chenzongze
+
+
+2011.05.05
+版本：2.1.1CX-build20110505
+更新：1.在Banner添加具体的版本号，便于维护
+      2.整合xuezhifeng和我的两个分支
+注意：更新安装时先删除python script和Libs目录下面的Scapy相关文件
+作者：chenzongze
+
+
+2011.02.22
+版本：scapy-2.1.1CX-20110222
+更新：完善PPP协议
+作者：xuezhifeng
+
+
+2011.02.15
+版本：scapy-2.1.1CX-20110215
+更新：使send、sniff等函数可以通过给iface参数传网卡适配器名字收发包
+	如：sniff(iface="本地连接"),以前此功能只支持linux
+作者：chenzongze
+
+2011.01.26
+版本：scapy-2.1.1CX-110126
+更新：把conflence上的文档转为pdf手册，添加进doc
+
+
+2010.12.28
+版本：scapy-2.1.1CX-101228
+更新：更新send，sendp函数，使之iface参数支持ip地址过滤
+作者：chenzongze
+
+2010.11.22
+版本：scapy-C.X-latest-101122.zip 
+更新：
+	修改scapy中PPP LCP的定义，并添加现已知的所有PPP LCP option的类，
+	使PPP LCP解析正常，并可取出option中的字段。
+作者：xuezhifeng
+
+
+------------------old updates ----------------
+scapy-2.1.1CX-101110.zip  by chenzongze
+2010.11.10:修正一个无法解析pptp的疏忽
+scapy-2.1.1CX-101105.zip
+2010.11.5:修正一个sniff函数的小bug
+scapy-2.1.1CX-101104-2.zip
+2010.11.4第二次更新：使sniff函数的iface参数支持ip地址进行过滤
+即可以用sniff(iface='192.168.1.100')类似形式抓相应网卡的包
+
+scapy-2.1.1CX-101104.zip  by chenzongze
+2010.11.4 完善对PPPoE的支持，使之能解析PPPoED TAG
+注：可以通过p[PPPoED].TAG[i] 来访问第i个PPPoED TAG
+
+
+2010.10   完善对PPTP，L2TP,部分无线协议的支持

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/scapy/modules
+END
+nmap.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/scapy/modules/nmap.py
+END
+queso.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/scapy/modules/queso.py
+END
+voip.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/scapy/modules/voip.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/scapy/modules/__init__.py
+END
+geoip.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/scapy/modules/geoip.py
+END
+p0f.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/scapy/modules/p0f.py
+END

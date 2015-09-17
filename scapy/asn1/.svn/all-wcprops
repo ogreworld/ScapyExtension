@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/scapy/asn1
+END
+ber.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/scapy/asn1/ber.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/scapy/asn1/__init__.py
+END
+asn1.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/scapy/asn1/asn1.py
+END
+mib.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/scapy/asn1/mib.py
+END

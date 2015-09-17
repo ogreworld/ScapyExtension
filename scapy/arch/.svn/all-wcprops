@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Testing/Public/!svn/ver/856/LIB/scapy/branches/2.2.x/scapy/arch
+END
+bsd.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/scapy/arch/bsd.py
+END
+solaris.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/scapy/arch/solaris.py
+END
+pcapdnet.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/Testing/Public/!svn/ver/835/LIB/scapy/branches/2.2.x/scapy/arch/pcapdnet.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/scapy/arch/__init__.py
+END
+linux.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/scapy/arch/linux.py
+END
+unix.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/scapy/arch/unix.py
+END

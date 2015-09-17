@@ -1,0 +1,8 @@
+scapy/tools
+scapy/arch
+scapy/crypto
+scapy/arch/windows
+scapy
+scapy/asn1
+scapy/modules
+scapy/layers

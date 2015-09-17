@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/test
+END
+import_tester
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/test/import_tester
+END
+test_is_sniffing.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/test/test_is_sniffing.py
+END
+run_tests
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/test/run_tests
+END
+regression.uts
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/test/regression.uts
+END
+run_tests.bat
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/Testing/Public/!svn/ver/73/LIB/scapy/branches/2.2.x/test/run_tests.bat
+END
